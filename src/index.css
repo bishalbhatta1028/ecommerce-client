@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .form-label{
+        @apply block text-gray-700 text-sm font-bold mb-2 capitalize
+    }
+
+    .form-control{
+        @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none 
+    }
+
+    .btn{
+        @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none 
+    }
+}
+
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: .75rem;
+    padding-right: .75rem;
+}
+
+@media(min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media(min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media(min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        max-width: 1140px;
+    }
+}
+@media(min-width:1400px){
+    .container{
+        max-width: 1320px;
+    }
+}
+
+
+/* body {
+    background-color: white;
+}
+
+@media (min-width:576px) {
+    body {
+        background-color: orange;
+    }
+}
+
+@media (min-width:768px) {
+    body {
+        background-color: teal;
+    }
+} */
+
+.rc-pagination{
+    display: flex;
+}
+.rc-pagination li{
+    border: 1px solid black;
+    padding: 1rem;
+    cursor: pointer;
+}
+.rc-pagination-options{
+    display: none;
+}
+.rc-pagination-item-active{
+    background-color: grey;
+    color: white;
+}
+.rc-pagination-disabled{
+    opacity: .5;
+    cursor: no-drop !important;
+}
